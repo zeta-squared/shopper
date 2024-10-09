@@ -1,0 +1,39 @@
+.App {
+	padding: 0 !important;
+}
+
+.Header {
+	border-bottom: 1px solid #ddd;
+}
+
+.ItemList {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.AddItemForm {
+	height: 7em;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.ContentArea {
+	height: 100vh;
+}
+
+.ContentArea, .FlashArea {
+	background-color: #d1d8af;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.InputField {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.Dropdown {
+	width: 60px;
+}
