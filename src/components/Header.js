@@ -35,7 +35,7 @@ export default function Header() {
 				<div className="justify-content-end Dropdown">
 					{user !== null &&
 						<NavDropdown align="end" title={
-							<Image src="https://www.gravatar.com/avatar/8455938a1db5c475a87d76edacb6284e?d=identicon&s=32" roundedCircle/>
+							<Image src={user.avatar_url + "&s=32"} roundedCircle />
 						}>
 							<NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
 						</NavDropdown>
