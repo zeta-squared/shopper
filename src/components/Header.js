@@ -1,13 +1,11 @@
 import { NavLink } from 'react-router-dom';
 
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import NavbarToggle from 'react-bootstrap/NavbarToggle';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button';
 
 import Instructions from './Instructions';
 
@@ -33,7 +31,7 @@ export default function Header() {
 					Shopper
 				</Navbar.Brand>
 				<div className="justify-content-end Dropdown">
-					{user !== null &&
+					{user &&
 						<NavDropdown align="end" title={
 							<Image src={user.avatar_url + "&s=32"} roundedCircle />
 						}>

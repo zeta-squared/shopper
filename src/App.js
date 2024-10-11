@@ -22,8 +22,8 @@ function App() {
 						<UserProvider>
 							<Header />
 							<Routes>
-								<Route path="/login" element={<LoginPage />} />
-								<Route path="/register" element={<RegistrationPage />} />
+								<Route path="/login" element={<PublicRoute><LoginPage /></PublicRoute>} />
+								<Route path="/register" element={<PublicRoute><RegistrationPage /></PublicRoute>} />
 								<Route path="*" element={
 									<PrivateRoute>
 										<Routes>

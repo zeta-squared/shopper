@@ -6,7 +6,6 @@ import { useFlash } from '../contexts/FlashProvider';
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row';
 
 import InputField from '../components/InputField';
 import Body from '../components/Body';
@@ -19,6 +18,10 @@ export default function RegistrationPage() {
 	const { state } = useLocation();
 	const navigate = useNavigate();
 	const flash = useFlash();
+
+	useEffect(() => {
+		usernameField.current.focus();
+	}, []);
 
 	const onSubmit = async (event) => {
 		event.preventDefault();
