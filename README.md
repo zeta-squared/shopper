@@ -16,7 +16,9 @@ PORT=<port>
 ```
 to the `.env` file.
 
-Now you are ready to run the application. Use `npm start` to run in a development server. There is an issue I have come across that I did not accomodate for. It is unpredictable in nature. Because React makes duplicate requests in strict mode when running as a development server the API will sometimes return bad responses that cause errors on the frontend. For this reason I prefer to build the code with `npm run build` and run on a local server such as `serve`. Make sure you have `serve` installed by checking `serve -v`. If not, run `npm install -g serve`. With `serve` installed and the build complete you can now host the production server by using the command `serve -s build`.
+Now you are ready to run the application. Use `npm start` to run as a development server. You can also build the code with `npm run build` and run on a local server such as `serve`. Make sure you have `serve` installed by checking `serve -v`. If not, run `npm install -g serve`. With `serve` installed and the build complete you can now host the production server by using the command `serve -s build`.
+[!CAUTION]
+There is an issue I have come across that I did not accomodate for. It is unpredictable in nature. Because React makes duplicate requests in strict mode when running as a development server the API will sometimes return bad responses that cause errors on the frontend. For this reason I prefer to run the application as a production server.
 
 ## Framework
 The application is constructed in the React.js framework with JavaScript. Unfortunately, I have not yet had exposure with TypeScript but this is something I would like to introduce eventually. The project requires some utilities supplied by the [Node.js](https://nodejs.org) but this is mainly just the installation via `npm`.
